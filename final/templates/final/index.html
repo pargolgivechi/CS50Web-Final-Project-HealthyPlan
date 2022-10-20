@@ -1,0 +1,23 @@
+{% extends "final/layout.html" %}
+
+{% block body %}
+    <div class="container mainPlan">
+        <h1 class="display-4 title_text mt-5"><strong>Diet Plans</strong></h1>
+        <br/>
+        <div class="row my-5">
+            {% for plan in plans %}
+                <div class="col-lg-3 perPlan">
+                    <div class="mb-4 shadow">
+                        <div class="inner" style="position: relative;">
+                            <a href="{% url 'plan' plan.id %}">
+                                <img src="../../static/final/images/{{plan}}.jpg" alt="" class="image2 rounded">
+                                <div class="pic text-white h4">{{plan}}</div>
+                                <div class="background"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

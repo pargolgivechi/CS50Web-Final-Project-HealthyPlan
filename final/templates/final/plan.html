@@ -1,0 +1,83 @@
+{% extends "final/layout.html" %}
+
+
+{% block body %}
+   <div class="container">
+        <div class="plan">
+            <h1 id="title" class="display-4 mt-5"><strong>{{ plan_title }}</strong></h3>
+            <br/>
+            <div class="row my-5">
+                <h1 class="display-6 col-12 mb-5">Breakfast</h1>
+                {% for meal in plan_breakfast %}
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="card mb-5 shadow rounded">
+                            <div class="inner">
+                                <img src="../../static/final/{{meal.img}}" class="card-img-top image1" alt="">
+                            </div>
+                            <div class="card-body p-4">
+                                <h5 class="lead mt-3 mb-4">{{ meal.meal_title }}</h5>
+                                <div class="card-text">Calories: {{ meal.calories }} kcal</div>
+                                <div class="{{meal.the_meal}}">
+                                    <a type="button" class="meal btn btn-success mt-3" data-id="{{ meal.id }}">View Recipe</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                <h1 class="display-6 col-12 mb-5">Lunch</h1>
+                {% for meal in plan_lunch %}
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="card mb-5 shadow rounded">
+                            <div class="inner">
+                                <img src="../../static/final/{{meal.img}}" class="card-img-top image1" alt="">
+                            </div>
+                            <div class="card-body p-4">
+                                <h5 class="lead mt-3 mb-4">{{ meal.meal_title }}</h5>
+                                <div class="card-text">Calories: {{ meal.calories }} kcal</div>
+                                <div class="{{meal.the_meal}}">
+                                    <a type="button" class="meal btn btn-success mt-3" data-id="{{ meal.id }}">View Recipe</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                <h1 class="display-6 col-12 mb-5">Dinner</h1>
+                {% for meal in plan_dinner %}
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="card mb-5 shadow rounded">
+                            <div class="inner">
+                                <img src="../../static/final/{{meal.img}}" class="card-img-top image1" alt="">
+                            </div>
+                            <div class="card-body p-4">
+                                <h5 class="lead mt-3 mb-4">{{ meal.meal_title }}</h5>
+                                <div class="card-text">Calories: {{ meal.calories }} kcal</div>
+                                <div class="{{meal.the_meal}}">
+                                    <a type="button" class="meal btn btn-success mt-3" data-id="{{ meal.id }}">View Recipe</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                <h1 class="display-6 col-12 mb-5">Snack</h1>
+                {% for meal in plan_snack %}
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="card mb-5 shadow rounded">
+                            <div class="inner">
+                                <img src="../../static/final/{{meal.img}}" class="card-img-top image1" alt="">
+                            </div>
+                            <div class="card-body p-4">
+                                <h5 class="lead mt-3 mb-4">{{ meal.meal_title }}</h5>
+                                <div class="card-text">Calories: {{ meal.calories }} kcal</div>
+                                <div class="{{meal.the_meal}}">
+                                    <a type="button" class="meal btn btn-success mt-3" data-id="{{ meal.id }}">View Recipe</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="recipe"></div>
+        <br/>
+    </div>  
+{% endblock %}

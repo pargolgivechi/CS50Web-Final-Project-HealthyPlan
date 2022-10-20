@@ -1,0 +1,586 @@
+ 
+  body {
+    background-color: white;
+  }
+
+  .mainPlan {
+    margin-top: 4.6rem;
+    margin-bottom: 4.6rem;
+  }
+
+  .diary .show {
+    padding: 4.7rem;
+  }
+
+  .navbar{
+      background-color: #32CD32;
+  } 
+
+  .nav:hover{
+      font-weight: 700;
+      background-color: #2ec82e;
+  } 
+
+  .card {
+      max-width: 21rem;
+      height: 25.5rem;
+  }
+
+  .image1 {
+      width: 100%;
+      height: 13rem;
+  }
+
+  .image2 {
+      width: 100%;
+      height: 18rem;
+  }
+
+  .image3 {
+      width: 100%;
+      height: 18rem;
+      object-fit: cover;
+  }
+
+  .inner {
+      overflow: hidden;
+  }
+
+  .inner img {
+      transition: all 1.5s ease;
+  }
+
+  .inner:hover img {
+      transform:scale(1.2);
+  }
+
+  .pic {
+      z-index: 10;
+      position: absolute; 
+      top: 3rem; 
+      left: 2px;
+      padding: 15px;
+  }
+
+  .background {
+      position: absolute; 
+      z-index: 1;
+      top: 3rem;
+      width: 12rem;
+      height: 4rem;
+      background-color: black;
+      opacity: 0.5;
+  }
+
+  #title, .title_text {
+      color: 	#108310;
+  } 
+
+  .log {
+      margin: 0;
+      padding: 0;
+      height: 80.5vh;
+  }
+
+  .reg {
+      margin: 0;
+      padding: 0;
+      height: 105vh;
+  }
+    
+  #login .container #login-row #login-column #login-box {
+    margin-top: 84px;
+    max-width: 600px;
+    height: 400px;
+    background-color: white;
+  }
+
+  #login .container #login-row #login-column #login-box #login-form {
+    padding: 20px;
+  }
+
+  #login .container #login-row #login-column #login-box #login-form #register-link {
+    margin-top: -85px;
+  }
+
+  #login .container #login-row #login-column #register-box {
+    margin-top: 84px;
+    max-width: 600px;
+    height: 570px;
+    background-color: white;
+  }
+
+  #login .container #login-row #login-column #register-box #login-form {
+    padding: 20px;
+  }
+
+  #login .container #login-row #login-column #register-box #login-form #register-link {
+    margin-top: -85px;
+  }
+
+  #login label {
+    margin-bottom: 5px;
+  }
+
+  .today {
+    float: right;
+    text-align: center;
+    border-radius: 10px;
+    padding: 7px;
+    border: #108310 solid 2px;
+  }
+
+  .green {
+    color: #108310;
+  }
+
+  .lightgreen {
+    color: #32CD32;
+  }
+
+  .chartBox {
+    width: 180px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  .chart {
+    position: absolute;
+  }
+
+  .trac {
+    position: absolute;
+    top: 4rem;
+    left: 3.7rem;
+  }
+
+  .bg {
+    background-color: #f1f1f1;
+    color: #767676;
+  }
+
+  .historyPage {
+    height: 73vh;
+  }
+
+  .one_history {
+    height: 63.4vh;
+    margin-top: 3.8rem;
+    margin-bottom: 3.7rem;
+  }
+
+  .diary .edit-2, .diary .my_diaries  {
+    margin-right: 10px;
+  }
+
+  @media only screen and (max-width: 1080px) {
+
+    .header {
+      margin-bottom: 4rem;
+    }
+      
+    .header .navbar-brand {
+      font-size: 60px;
+      margin: 3rem 3rem 3rem 1.5rem;
+      font-weight: 400;
+    }
+
+    .header .nav-link {
+      font-size: 40px;
+      font-weight: 300;
+      margin-bottom: 10px;
+      margin-left: 2rem;
+    }
+
+    .pic {
+      font-size: 60px;
+      font-weight: 700;
+      margin-left: 3rem;
+      margin-top: 3rem;
+    }
+
+    .perPlan {
+      margin-bottom: 5rem;
+    }
+
+    .image2 {
+      width: 100%;
+      height: auto;
+    }
+
+    .bg p {
+      font-size: 33px;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
+
+    .background {
+      width: 32rem;
+      height: 7.5rem;
+      margin-top: 3rem;
+    }
+
+    .title_text, .plan #title {
+      font-size: 60px;
+      font-weight: 400;
+    }
+
+    .plan .display-6 {
+      margin-top: 30px;
+      font-size: 55px;
+      font-weight: 600;
+    }
+
+    .plan .card {
+      max-width: 42rem;
+      height: auto; 
+    }
+
+    .plan .col-sm-12 {
+      margin-bottom: 4rem;
+    }
+
+    .image1 {
+      max-width: 42rem;
+      height: auto; 
+    }
+
+    .card-body  {
+      margin: 3rem;
+    }
+
+    .card-body .lead {
+      font-size: 40px;
+      font-weight: 600;
+    }
+
+    .card-body .card-text {
+      font-size: 35px;
+      margin-bottom: 3rem;
+    }
+
+    .card-body .meal {
+      font-size: 35px;
+      margin-bottom: 1rem;
+    }
+
+    .perMeal .shadow-lg {
+      box-shadow: none !important;
+    }
+
+    .perMeal img {
+      margin-bottom: 4rem;
+      width: 100%;
+      height: auto;
+    }
+
+    .perMeal h1 {
+      font-size: 60px;
+      font-weight: 400;
+      margin-bottom: 4rem;
+    }
+
+    .perMeal .h4 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    .perMeal .lead {
+      font-size: 40px;
+      font-weight: 300;
+    }
+
+    .perMeal .p-5 {
+      padding: 0 !important;
+    }
+
+    .info .display-5 {
+      margin-bottom: 5rem;
+      font-size: 60px;
+      font-weight: 300;
+    }
+
+    .info .text-title {
+      font-size: 30px;
+    }
+
+    .info .form-group {
+      margin-bottom: 5rem;
+    }
+
+    .info .text-title {
+      font-size: 30px;
+      margin-bottom: 8.9rem;
+    }
+
+    .info .form-control {
+      font-size: 30px;
+    }
+
+    .information .display-6 {
+      margin-top: 5rem;
+      font-size: 50px;
+      font-weight: 300;
+    }
+
+    .information .info-text {
+      margin-bottom: 11px;
+      font-size: 30px;
+    }
+
+    .information .info-text .h6 {
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    .information .report {
+      font-size: 35px;
+      font-weight: 400;
+      margin-top: 5rem !important;
+    }
+
+    .information .edit {
+      margin-top: 20px;
+      font-size: 30px;
+    }
+
+    .information .outline a {
+      margin-top: 3rem;
+      font-size: 30px;
+    }
+
+    .information .shadow-lg {
+      box-shadow: none !important;
+      padding: 0 !important;
+    }
+
+    .information .days{
+      margin-bottom: 7rem;
+    }
+
+    #login .shadow{
+      box-shadow: none !important;
+    }
+
+    #login .text-danger {
+      font-size: 40px;
+      margin-bottom: 3rem;
+    }
+
+    #login .form .text-center {
+      text-align: left !important;
+      font-size: 60px;
+      font-weight: 600;
+      margin-bottom: 4rem !important; 
+    }
+
+    #login .form label {
+      font-size: 40px;
+      margin-bottom: 1.5rem;
+    }
+
+    #login .form input {
+      font-size: 40px;
+      margin-bottom: 5rem;
+    }
+
+    #login small {
+      font-size: 40px;
+        
+    }
+
+    .log {
+      height: 78.8vh;
+    }
+
+    .reg {
+      height: 89vh;
+    }
+
+    .diary .shadow-lg {
+      box-shadow: none !important;
+    }
+
+    .diary .display-4 {
+      font-size: 55px;
+      font-weight: 400;
+      margin-bottom: 7rem;
+    }
+
+    .diary .track label {
+      margin-top: 3rem;
+      font-size: 30px;
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+    }
+
+    .diary select {
+      font-size: 25px; 
+    }
+
+    .diary #nam {
+      font-size: 40px;
+      font-weight: 500;
+    }
+
+    .diary .trac {
+      font-size: 40px;
+      font-weight: 500;
+      top: -0.5rem;
+      left: 4.6rem;
+    }
+
+    .diary .chartBox {
+      width: 230px;
+      height: 230px;
+    }
+
+    .diary .today {
+      font-size: 30px;
+      font-weight: 500;
+    }
+
+    .diary .text-center {
+      margin-top: 5rem;
+      text-align: left !important;
+    }
+
+    .diary .btn {
+      font-size: 30px;
+    }
+
+    .diary .edit-2, .diary .my_diaries  {
+      font-size: 40px;
+      margin-top: 5rem;
+      margin-bottom: 10rem;
+      margin-right: 25px;
+    }
+
+    .diary .info-text {
+      font-size: 40px;
+      margin-bottom: 2.5rem;
+    }
+
+    .diary .border-bottom {
+      border-bottom: 0 !important;
+    }
+
+    .diary .line {
+      padding-top: 8rem;
+      border-top: 2px solid gray; 
+    }
+    
+    .diary .info-text strong {
+      font-size: 40px;
+    }
+
+    .diary .alert-success {
+      font-size: 40px;
+      width: 33rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .one_history.shadow-lg {
+      box-shadow: none !important;
+    }
+
+    .one_history .back-1 {
+      font-size: 40px;
+      margin-top: 5rem;
+    }
+
+    .historyPage .back-2{
+      font-size: 40px;
+      margin-top: 5rem;
+    }
+
+    .one_history .back {
+      font-size: 40px;
+      margin-top: 5rem;
+    }
+
+    .one_history .info-text {
+      font-size: 40px;
+      margin-bottom: 2.5rem;
+    }
+
+    .one_history .border-bottom {
+      border-bottom: 0 !important;
+    }
+
+    .one_history .line {
+      padding-top: 8rem;
+      border-top: 2px solid gray; 
+    }
+    
+    .one_history .info-text strong {
+      font-size: 40px;
+    }   
+
+    .one_history {
+      height: 76.5vh;
+    }
+ 
+    .historyPage .display-5 {
+      margin-bottom: 5rem;
+      font-size: 60px;
+      font-weight: 300;
+    }
+    
+    .historyPage .pick, .historyPage .h6 {
+      font-size: 35px;
+      font-weight: 500;
+    }
+    
+    .historyPage .btn-outline-success{
+      margin-bottom: 5rem;
+      font-size: 35px;
+      font-weight: 400;
+    }
+    
+    .historyPage .error {
+      margin-bottom: 5rem;
+      font-size: 35px;
+      font-weight: 500;
+    }
+    
+    .historyPage {
+      min-height: 78.8vh;
+    }
+  
+}
+
+
+@media only screen and (min-width: 1540px) {
+
+  .mainPlan {
+    height: 42.1rem;
+  }
+
+  .log {
+    height: 84.8vh;
+  }
+
+  .reg {
+    height: 84.8vh;
+  }
+
+  .info {
+    height: 84.8vh;
+  }
+
+  .diary {
+    height: 90vh;
+  }
+
+  .historyPage {
+    height: 79vh;
+  }
+  
+  .one_history {
+    height: 71.5vh;
+  }
+
+}

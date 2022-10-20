@@ -1,0 +1,85 @@
+{% extends "final/layout.html" %}
+
+{% block body %}
+    <div class="info container mb-5">
+        <form class="editForm">
+            <h1 class="display-5 mt-5">Information Form</h1>
+            <div class="row">
+                <div class="form-group col-md-12 col-lg-6 mt-5">
+                    <div class="col-6">
+                        <label class="text-title mb-3">Weight</label>
+                        <input class="form-control form-control-sm editWeight" type="number" min="45.0" max="150.0" step="0.2" placeholder="kg" required>
+                    </div>
+                </div>
+                <div class="form-group col-md-12 col-lg-6 mt-5">
+                    <div class="col-6">
+                        <label class="text-title mb-3">Height</label>
+                        <input class="form-control form-control-sm editHeight" type="number" min="140.0" max="195.0" step="0.2" placeholder="cm" required>
+                    </div>
+                </div>
+                <div class="form-group col-md-12 col-lg-6 mt-5">
+                    <div class="col-4">
+                        <label class="text-title mb-3">Gender</label>
+                        <select class="form-control editGender form-control-sm">
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group col-md-12 col-lg-6 mt-5">
+                    <div class="col-6">
+                        <label class="text-title mb-3">Target</label>
+                        <input class="form-control form-control-sm editTarget" type="number" min="45.0" max="120.0" step="0.2" placeholder="kg" required>
+                        <div class="invalidTarget2"></div>
+                    </div>
+                </div>
+                <div class="form-group col-md-12 col-lg-6 mt-5">
+                    <div class="col-6">
+                        <label class="text-title mb-3">Choose Your Diet plan</label>
+                        <select class="form-control form-control-sm col-6 editPlan">
+                            <option>Low Carb</option>
+                            <option>High Protein</option>
+                            <option>Vegan</option>
+                            <option>Mediterranean</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mt-5 col-12">
+                    <button type="submit" class="text-title btn btn-success">Submit</button>
+                </div>
+            </div>
+        </form>
+        <div class="information mt-5">
+            <h1 class="display-5 mt-5">Personal Information</h1>
+            <div class="row">
+                <div class="col-md-12 col-lg-4 mt-4 text-secondary info-text"><span class="h6">Starting Date: </span>{{ prof.date }}</div>
+                <div class="col-md-12 col-lg-4 mt-4 text-secondary info-text"><span class="h6">Gender: </span><span class="gen">{{ prof.gender }}</span></div>
+                <div class="col-md-12 col-lg-4 mt-4 text-secondary info-text"><span class="h6">Current weight: </span><span class="wei">{{ prof.weight }}</span></div>
+                <div class="col-md-12 col-lg-4 mt-4 text-secondary info-text"><span class="h6">Current height: </span><span class="hei">{{ prof.height }}</span></div>
+                <div class="col-md-12 col-lg-4 mt-4 text-secondary info-text"><span class="h6">Your ideal weight: </span><span class="tar">{{ prof.target }}</span></div>
+                <div class="col-md-12 col-lg-4 mt-4 text-secondary info-text"><span class="h6">Your Plan: </span><span class="pla">{{ prof.plan }}</span></div>
+                <div class="col-12 mt-5 mb-5">
+                    <input type="button" class="edit btn btn-success" value="Edit Profile">
+                </div>
+            </div>
+
+            <div class="row p-5 shadow-lg rounded">
+                <h6 class="display-6">Report</h6>
+                <hr/>
+    
+                <div class="col-md-12 col-lg-7 mt-4 h6 text-secondary report"><strong>Recomended Daily Calories: </strong><strong>{{ daily_cal }} kcal</strong></div>
+                <div class="col-md-4 col-lg-2 mt-4 outline"><a class="btn btn-outline-primary" href="{% url 'plan' prof.plan.id %}">View Plan</a></div>
+                <div class="col-md-4 col-lg-2 mt-4 outline"><a class="btn btn-outline-primary" href="{% url 'diary' %}">Make Diary</a></div>
+
+                {% if bmi > 23 %}
+                    <div class="col-12 mt-4 h5 text-danger report"><strong>Calculated BMI: </strong><strong>{{ bmi }} Overweight</strong></div>
+                {% else %}
+                    <div class="col-12 mt-4 h5 lightgreen report"><strong>Calculated BMI: </strong><strong>{{ bmi }} Normal</strong></div>
+                {% endif %}
+
+                <div class="col-12 mt-4 h6 text-secondary report days"><strong>Diet Period: </strong><strong>90 days</strong></div>
+            </div>
+            <br/>
+        </div> 
+    </div>
+{% endblock %}
